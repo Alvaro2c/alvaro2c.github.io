@@ -13,7 +13,7 @@ image: start-simple.jpg
 {: style="text-align: justify"}
 *Then iterate.* <br />
 {: style="text-align: justify"}
-Hi, I'm Alvaro Carranza, an economic analyst / former social scientist turned Data scientist / Analyst. The first sentence has been on my mind since I was in college and hasn't left since.
+Hi, I'm Alvaro Carranza, an economic analyst / former social scientist turned Data Scientist / Analyst. The first sentence has been on my mind since I was in college and hasn't left since.
 The second and third are among the things that resonated the most during the 24 weeks I spent in <a href="https://www.lewagon.com/" target="_blank">Le Wagon</a>'s Data Science & AI Bootcamp from April to October 2023.
 {: style="text-align: justify"}
 In the last 13 years of my life I have had the opportunity to learn and apply my learning to real problems in diverse settings, from academia to economic diplomacy (you can read more about it [here](/cv)). More recently, and inevitably, data has been at the core of an increasing amount of subjects I have dealt with as an analyst, but of course also a fundamental part of the solutions.
