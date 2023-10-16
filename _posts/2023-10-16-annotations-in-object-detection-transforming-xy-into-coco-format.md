@@ -51,8 +51,8 @@ import json
 annotations = []
 images = []
 
-label_folder = # Same folder as "Label" folder of the repository
-dataset_folder = # Same folder as "Dataset" folder of the repository
+label_folder = # Same folder as "Label" repository's folder
+dataset_folder = # Same folder as "Dataset" repository's folder
 
 for txt_file in os.listdir(label_folder):
     if txt_file.endswith(".txt"):
@@ -65,13 +65,10 @@ for txt_file in os.listdir(label_folder):
             with open(os.path.join(label_folder, txt_file), 'r') as txt_file:
                 annotation_id = 1
                 for line in txt_file:
-                    # a and b are the x and y coordinates of the center
-                     of the annotation / bbox
+                    # a and b are xy coord of the center of the annotation
                     a, b, category = map(int, line.strip().split())
-                    # s is an arbitrary size (width and height)
-                    picked to try to make sure all RBCs are inside the
-                    general bboxes
-                    s = s
+                    # s is an arbitrary size to fit all RBCs
+                    s = 70
                     x_min = a - (s/2)
                     x_max = a + (s/2)
                     y_min = b - (s/2)
@@ -94,7 +91,7 @@ for txt_file in os.listdir(label_folder):
                                           x_min + x_max,
                                           y_max
                                           ],
-                        "iscrowd": 0  # 0 for individual annotations
+                        "iscrowd": 0  # 0 for individual annotation
                     }
                     annotations.append(annotation)
                     annotation_id += 1
