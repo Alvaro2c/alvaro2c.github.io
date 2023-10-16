@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Annotations in Object Detection, Part I: Transforming XY coordinates into COCO format"
+title: "Annotations in Object Detection: Transforming XY coordinates into COCO format"
 author: "Alvaro Carranza"
 categories: blog
 tags: [blog]
-image: coco-annotations.jpg
+image: coco-image.jpg
 ---
 
 *Image from COCO dataset (<a href="https://medium.com/mlearning-ai/coco-dataset-what-is-it-and-how-can-we-use-it-e34a5b0c6ecd" target="_blank">source</a>)*
@@ -13,10 +13,10 @@ image: coco-annotations.jpg
 **Data is often messy or incomplete. For this reason, data preprocessing (which includes labeling) is one of the most important steps in data analysis and data science.**<br />
 {: style="text-align: justify"}
 
-During the first stages of <a href="https://hs-detector.streamlit.app" target="_blank">HS Detector Web App</a>, a tool I developed - alongside 4 other students - for early detection of Hereditary Spherocytosis (an inherited blood disorder that happens when red blood cells are shaped like a sphere instead of a disk, named spherocytes), we settled on using two datasets to train a Deep Learning model for object detection (red blood cells in this case):
+During the first stages of <a href="https://hs-detector.streamlit.app" target="_blank">HS Detector Web App</a>, a tool I developed - alongside 4 other students - for early detection of Hereditary Spherocytosis (an inherited blood disorder that happens when red blood cells (RBCs from now on) are shaped like a sphere instead of a disk, named spherocytes), we settled on using two datasets to train a Deep Learning model for object detection (a classification and localization task, of RBCs in this case):
 {: style="text-align: justify"}
-- <a href="https://data.mendeley.com/datasets/c37wnbbd3c/1" target="_blank">Dataset A</a>: a dataset of 186 digital images of blood smears from five patients with hereditary spherocytosis;
-- <a href="https://github.com/Chula-PIC-Lab/Chula-RBC-12-Dataset/" target="_blank">Chula-RBC-12-Dataset</a>: a dataset of red blood cell (RBC) blood smear images used in <a href="https://arxiv.org/abs/2012.01321" target="_blank">"Red Blood Cell Segmentation with Overlapping Cell Separation and Classification from an Imbalanced Dataset"</a> (2023), containing 12 classes of red blood cell types consisting of 706 smear images that contain over 20,000 RBC cells.<br />
+- <a href="https://data.mendeley.com/datasets/c37wnbbd3c/1" target="_blank">Dataset A</a>: a dataset of 186 digital images of RBC blood smears from five patients with hereditary spherocytosis;
+- <a href="https://github.com/Chula-PIC-Lab/Chula-RBC-12-Dataset/" target="_blank">Chula-RBC-12-Dataset</a>: a dataset of RBC blood smear images used in <a href="https://arxiv.org/abs/2012.01321" target="_blank">"Red Blood Cell Segmentation with Overlapping Cell Separation and Classification from an Imbalanced Dataset"</a> (2023), containing 12 classes of RBC types consisting of 706 smear images that contain over 20,000 RBCs.<br />
 {: style="text-align: justify"}
 
 Image annotation (labeling digital images) is a central part of training computer vision models that process image data for object detection, classification, segmentation and more. For instance, bounding boxes can be placed around objects to label each type or category.
@@ -27,23 +27,23 @@ Image annotation (labeling digital images) is a central part of training compute
 *Bounding boxes applied to identify vehicle types and pedestrians (<a href="https://labelbox.com/guides/image-annotation/" target="_blank">source</a>)*
 {: style="text-align: center"}
 
-While we used Roboflow's <a href="https://docs.roboflow.com/annotate/use-roboflow-annotate/model-assisted-labelingModel-Assisted" target="_blank">Model-Assisted Labeling</a>) to quickly annotate Dataset A, but the Chula-RBC-12-Dataset annotation would be a much more difficult task considering the number of red blood cell types to be labelled (12). <br />
+While we used Roboflow's <a href="https://docs.roboflow.com/annotate/use-roboflow-annotate/model-assisted-labelingModel-Assisted" target="_blank">Model-Assisted Labeling</a> to quickly annotate Dataset A, the Chula-RBC-12-Dataset annotation would be a much more difficult task considering it included 12 classes (in this case RBC types). <br />
 {: style="text-align: justify"}
 
-Its repository includes a "Label" folder that contains label data inside of .txt files with the name of the corresponding image. The file can contain multiple lines. Each line is stored in the following sequence:
+Its repository includes a "Label" folder that contains label data in a specific way. You can find .txt files inside with the name of the corresponding image, each file containing multiple lines (one for each RBC label). Each line is stored in the following sequence:
 {: style="text-align: justify"}
 - x coordinate;
 - y coordinate;
-- type of red blood cell in number (0 for a normal cell, 1 for a macrocyte, 2 for a microcyte, 3 for a spherocyte...)<br />
+- type of RBC in number (0 for a normal RBC, 1 for a macrocyte, 2 for a microcyte, 3 for a spherocyte...)<br />
 {: style="text-align: justify"}
 
-However, Roboflow's output was in COCO format, a JSON structure that governs how labels and metadata are formatted for a dataset. This format originates from Microsoft's Common Objects in Context dataset (<a href="https://cocodataset.org/COCO" target="_blank">COCO</a>), one of the most popular object detection datasets (you can find more information on COCO in <a href="https://arxiv.org/pdf/1405.0312.pdf" target="_blank">this paper</a>). **Correctly annotating Chula-RBC-12-Dataset in the same format to the output of Roboflow's tool was vital to use both datasets in future developments** (e.g. detecting other red blood cell types and thus other diseases).
+However, Roboflow's output was in COCO format, a JSON structure that governs how labels and metadata are formatted for a dataset. This format originates from Microsoft's Common Objects in Context dataset (<a href="https://cocodataset.org/COCO" target="_blank">COCO</a>), one of the most popular object detection datasets (you can find more information on COCO in <a href="https://arxiv.org/pdf/1405.0312.pdf" target="_blank">this paper</a>). **Correctly annotating Chula-RBC-12-Dataset in the same format to the Rofoflow's output (COCO format) was vital to use both datasets in future developments** (e.g. detecting other RBC types and thus other diseases).
 {: style="text-align: justify"}
 
 I digged deeper into the <a href="https://cocodataset.org/#format-data" target="_blank">documentation</a> of this format and decided to **write a utility function in Python to transform the label data provided with the Chula-RBC-12-Dataset in .txt files (essentially XY coordinates and a label type) into COCO format**.
 {: style="text-align: justify"}
 
-```
+```python
 import os
 import json
 
@@ -84,9 +84,7 @@ for txt_file in os.listdir(label_folder):
                         "bbox": [x_min, y_min , s, s],
                         # area calculation for a square bbox
                         "area": s*s,
-                        # segmentation calculation based on
-                        the "Understanding COCO Dataset" website
-                        explanation
+                        # segmentation calculation with xs and ys
                         "segmentation": [x_min,
                                           y_min,
                                           x_min,
@@ -106,8 +104,7 @@ for txt_file in os.listdir(label_folder):
                 "file_name": image_filename
             })
 
-# Create a list with the corresponding id_names according to the Chula
-repository's README
+# Create a list with corresponding id_names
 id_names = {0: "RBC",
             1: "Macrocyte",
             2: "Microcyte",
@@ -153,7 +150,7 @@ with open("chula_coco_annotations.json", "w") as json_file:
 
 Some extra comments:
 - I discovered not all images had label data, so I also had to take that into account (only 623 out of +700 images had the corresponding label data);
-- As I only had XY coordinates to begin with, I had to make some compromises and have a standard size for bounding boxes (all squares of "s" width and height);
+- As I only had XY coordinates to begin with, I had to make some compromises and have a standard size for bounding boxes (all squares of "s" width and height) that could fit all RBCs;
 - Additional information to create the utility function - specially how to calculate segmentation - was found on <a href="https://www.section.io/engineering-education/understanding-coco-dataset/" target="_blank">"Understanding COCO Dataset"</a> article by Srishiles P S
 {: style="text-align: justify"}
 - Even if not used in the current deployment, you can find the actual function in <a href="https://github.com/rcarrillocruz/hereditary_spherocytosis_detection/blob/master/backend/ml_logic/utils.py" target="_blank">HS Detector Web App's repository</a>.
@@ -164,7 +161,4 @@ Although quite simple, finding a solution to this formatting problem allowed me 
 - Demistify JSON, the go-to format for exchanging data between web servers and clients;
 - Better understand the COCO Dataset;
 - **Highlight the importance of image annotation in computer vision models.**
-{: style="text-align: justify"}
-
-Be on the lookout for Part 2...
 {: style="text-align: justify"}
