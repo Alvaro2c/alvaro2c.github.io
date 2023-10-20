@@ -27,7 +27,7 @@ Image annotation (labeling digital images) is a central part of training compute
 *Bounding boxes applied to identify vehicle types and pedestrians (<a href="https://labelbox.com/guides/image-annotation/" target="_blank">source</a>)*
 {: style="text-align: center"}
 
-While we used Roboflow's <a href="https://docs.roboflow.com/annotate/use-roboflow-annotate/model-assisted-labelingModel-Assisted" target="_blank">Model-Assisted Labeling</a> to quickly annotate Dataset A, the Chula-RBC-12-Dataset annotation would be a much more difficult task considering it included 12 classes (in this case RBC types). <br />
+While we used Roboflow's <a href="https://docs.roboflow.com/annotate/use-roboflow-annotate/model-assisted-labeling" target="_blank">Model-Assisted Labeling</a> to quickly annotate Dataset A, the Chula-RBC-12-Dataset annotation would be a much more difficult task considering it included 12 classes (in this case RBC types). <br />
 {: style="text-align: justify"}
 
 Its repository includes a "Label" folder that contains label data in a specific way. You can find .txt files inside with the name of the corresponding image, each file containing multiple lines (one for each RBC label). Each line is stored in the following sequence:
@@ -37,7 +37,7 @@ Its repository includes a "Label" folder that contains label data in a specific 
 - type of RBC in number (0 for a normal RBC, 1 for a macrocyte, 2 for a microcyte, 3 for a spherocyte...)<br />
 {: style="text-align: justify"}
 
-However, Roboflow's output was in COCO format, a JSON structure that governs how labels and metadata are formatted for a dataset. This format originates from Microsoft's Common Objects in Context dataset (<a href="https://cocodataset.org/COCO" target="_blank">COCO</a>), one of the most popular object detection datasets (you can find more information on COCO in <a href="https://arxiv.org/pdf/1405.0312.pdf" target="_blank">this paper</a>). **Correctly annotating Chula-RBC-12-Dataset in the same format as the Rofoflow's output (COCO format) was vital to use both datasets in future developments** (e.g. detecting other RBC types and thus other diseases).
+However, Roboflow's output was in COCO format, a JSON structure that governs how labels and metadata are formatted for a dataset. This format originates from Microsoft's Common Objects in Context dataset (<a href="https://cocodataset.org/" target="_blank">COCO</a>), one of the most popular object detection datasets (you can find more information on COCO in <a href="https://arxiv.org/pdf/1405.0312.pdf" target="_blank">this paper</a>). **Correctly annotating Chula-RBC-12-Dataset in the same format as the Rofoflow's output (COCO format) was vital to use both datasets in future developments** (e.g. detecting other RBC types and thus other diseases).
 {: style="text-align: justify"}
 
 I digged deeper into the <a href="https://cocodataset.org/#format-data" target="_blank">documentation</a> of this format and decided to **write a utility function in Python to transform the label data provided with the Chula-RBC-12-Dataset in .txt files (essentially XY coordinates and a label type) into COCO format**.
