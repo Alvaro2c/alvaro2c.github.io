@@ -7,7 +7,7 @@ tags: [blog]
 image: prtr-banner.png
 ---
 
-In the last two months or so I have been working in parallel in two projects, SPPD (Spanish Public Procurement Database) and PRTR Data, a dashboard with aggregated data on EU-financed (Recovery and Resilience Facility) tenders in Spain. In both cases, I found the need to have access to aggregated data but found the available options lackluster, thus deciding to work on my own solution.
+Letly I have been working in two projects in parallel: SPPD (Spanish Public Procurement Database) and PRTR Data, a dashboard with aggregated data on EU-financed (Recovery and Resilience Facility) tenders in Spain. In both cases, I found the need to have access to aggregated data but found the available options lackluster, thus deciding to work on my own solution.
 {: style="text-align: justify"}
 
 After a lot of work, I finally have a first version of the <a href="https://prtr-data.streamlit.app/" target="_blank">dashboard</a> (in Spanish, soon in English too!).
