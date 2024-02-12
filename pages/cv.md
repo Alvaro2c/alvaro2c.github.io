@@ -56,7 +56,7 @@ permalink: /cv
 ---
 ## Skills
 
-Python, SQLite, Pandas, Scikit-Learn, Seaborn, Tensorflow, GCP, Prefect, MLflow, FastAPI, Git, GitHub
+Python, PostgreSQL, Pandas, Scikit-Learn, Seaborn, Tensorflow, GCP, Looker, Airflow, MLflow, FastAPI, Git, GitHub
 
 ---
 ## Languages
