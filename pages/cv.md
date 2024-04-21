@@ -36,9 +36,14 @@ permalink: /cv
 ---
 ## Professional Experience
 
+**Revenue Analyst** <br />
+<a href="https://www.edreamsodigeo.com/" target="_blank">eDreams ODIGEO</a> <br />
+03/2024 – present | Barcelona, Spain
+{: style="text-align: justify"}
+
 **Economic Analyst** <br />
 <a href="https://www.tresor.economie.gouv.fr/" target="_blank">French Embassy in Spain</a> <br />
-08/2019 – present | Madrid, Spain
+08/2019 – 03/2024 | Madrid, Spain
 - Innovative industries (AI, Data, Cloud and 5G) contact point at the Embassy
 - Prepared data reports on a variety of topics (trade, investment, companies, tech...) to inform policy-making
 {: style="text-align: justify"}
