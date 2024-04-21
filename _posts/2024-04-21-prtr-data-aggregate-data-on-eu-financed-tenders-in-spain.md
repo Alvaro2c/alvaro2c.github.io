@@ -40,7 +40,7 @@ PRTR Data:
 There are many other differences between both dashboards and I hope to be able to update PRTR Data in the future to match some of the features available in ELISA.
 {: style="text-align: justify"}
 
-I believe it is important that this data is available to everyone and that it is possible to  highlight different information (through dashboards!) that might be of special interest to different stakeholders (citizens, companies, public institutions...).
+Even though this data was publicly available to everyone previously, how we are able to visualize is crucial so it can be useful / beneficial to different stakeholders (citizens, companies, public institutions...).
 {: style="text-align: justify"}
 
 If you have any suggestions or comments about it don't hesitate to reach out to me!
