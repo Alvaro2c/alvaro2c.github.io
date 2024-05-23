@@ -14,7 +14,7 @@ I am currently working as a Revenue Analyst at <a href="https://www.edreamsodige
 
 If you'd like to learn more about what I do, have a look at my [blog posts](/blog). Here are some of my projects:
 {: style="text-align: justify"}
-- <a href="https://hs-detector.streamlit.app" target="_blank">HS Detector Web App</a>, a tool developed for early detection of Hereditary Spherocytosis using Meta AI's SAM
+- <a href="https://www.youtube.com/watch?v=0WOQ90-CpxQ" target="_blank">HS Detector Web App</a>, a tool developed for early detection of Hereditary Spherocytosis using Meta AI's SAM
 - <a href="https://prtr-data.streamlit.app/" target="_blank">PRTR Data</a>, a dashboard with aggregate data from tenders financed with the Recovery and Resilience Facility (RRF) in Spain
 - Spanish Public Procurement Database (SPPD), a database built from <a href="https://contrataciondelestado.es/wps/portal/!ut/p/b1/rY_LboMwFES_pR8Q-dqAgaV52-Lh1ECBDSJR2pIWqFBExN-XVNmm3XR2Ix3N0aAG1TvDxBoQ0ySoQs3YLf1bd-mnsfu89Ya2up-5bhARsJTmAYm9oqDRrRL0siH1hsCDMPh7oflBDM3VS1FKqngIwKPAiwtsQEjoHfhFUW-A2bLS3zNua5A5z5tEyCSXIcEAFJXjNA_bnxxVoLfqDHMSH7wsj_zLaocyTguyfnyt3nUC98yv8SJFOnKRVkKowwnjo43LYO-z5DhbC3u6Cx1lWczBDDLLd4AbJfVSMyEE9H8XptE0nNDQvL8qOcRGv2PfPi9FYw!!/dl4/d5/L2dJQSEvUUt3QS80SmtFL1o2X0JTODhBQjFBMDAzVTgwQTZRUUM5RDAyMDkz/?nID=Z6_4EOCCFH208S3D02LDUU6HH2082&cID=Z6_4EOCCFH208S3D02LDUU6HH2082" target="_blank">publicly available data</a> from the Spanish government with search and insight features (*in progress*)
 {: style="text-align: justify"}
