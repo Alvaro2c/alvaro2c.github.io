@@ -4,7 +4,7 @@ title: "SPPD: Spanish Public Procurement Data - First step"
 author: "Alvaro Carranza"
 categories: blog
 tags: [blog]
-image: sppd-banner.png
+image: sppd-banner.jpg
 ---
 
 Last year, before joining eDreams as an analyst, I started a personal project called **SPPD** (Spanish Public Procurement Data). I recognized the need for access to aggregated procurement data but found the <a href="https://estadisticas.contrataciondelsectorpublico.gob.es/" target="_blank">available options</a> limited—understandably so—particularly when it came to accessing data from specific companies, sectors, or contractors. So, I decided to build my own solution.
