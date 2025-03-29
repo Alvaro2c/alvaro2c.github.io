@@ -4,13 +4,13 @@ title: "SPPD: Spanish Public Procurement Data - First step"
 author: "Alvaro Carranza"
 categories: blog
 tags: [blog]
-image: sppd-banner.png
+image: sppd-banner.jpg
 ---
 
 Last year, before joining eDreams as an analyst, I started a personal project called **SPPD** (Spanish Public Procurement Data). I recognized the need for access to aggregated procurement data but found the <a href="https://estadisticas.contrataciondelsectorpublico.gob.es/" target="_blank">available options</a> limited—understandably so—particularly when it came to accessing data from specific companies, sectors, or contractors. So, I decided to build my own solution.
 {: style="text-align: justify"}
 
-The [4th entry of this blog](/xml-scraping-101-elementtree-and-namespaces) (drier than I would have liked—though I did and learned a lot last year!) covers the first version of a script to parse XML/ATOM files, which is the format this data is currently available in, into parquet files.
+In a [previous entry of this blog](/xml-scraping-101-elementtree-and-namespaces) (drier than I would have liked—though I did and learned a lot last year!) covers the first version of a script to parse XML/ATOM files, which is the format this data is currently available in, into parquet files.
 {: style="text-align: justify"}
 
 Long story short, I decided to start from scratch last week and work on a repository to build Python tools to: 1) Download and parse this data, 2) Build a database with it and 3) Create a Streamlit app to interact with the data.
