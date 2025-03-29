@@ -1,5 +1,4 @@
 ---
----
 layout: post
 title: "SPPD: Batch and Parallel Parsing"
 author: "Alvaro Carranza"
