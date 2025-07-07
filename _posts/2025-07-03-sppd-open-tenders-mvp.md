@@ -7,8 +7,6 @@ tags: [blog]
 image: sppd-ot.jpg
 ---
 
-<div style="text-align: justify">
-
 After some time away, I’m happy to be back working on the **SPPD project** — and to share the first major milestone: the release of **SPPD Licitaciones Abiertas**, our **MVP platform** for **open procurement data** in Spain.
 
 This site is a small but meaningful step toward one of our core goals: making **Spanish public procurement** more **transparent** and **accessible**. Built around **open data** from <a href="https://contrataciondelestado.es/" target="_blank"><b>Ministerio de Hacienda</b></a> in Spain, the portal gives anyone the ability to **explore active tenders** currently open for submission.
@@ -23,5 +21,3 @@ Explore the site here: <a href="https://alvaro2c.github.io/sppd-ot/" target="_bl
 
 Backend code: <a href="https://github.com/Alvaro2c/sppd" target="_blank"><b>SPPD Backend</b></a><br>
 Frontend code: <a href="https://github.com/Alvaro2c/sppd-ot" target="_blank"><b>SPPD Frontend</b></a>
-
-</div>
