@@ -10,9 +10,9 @@ permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Alvaro Carranza"
-description:	       "Data Scientist | Data Analyst"
-author:              "AC"
+title:		           "AC"
+description:	       "All Things Data"
+author:              "Alvaro Carranza"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:

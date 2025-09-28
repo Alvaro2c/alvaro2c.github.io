@@ -8,7 +8,7 @@ permalink: /cv
 
 ## Professional Experience
 
-**Revenue Analyst** <br />
+**Data Analyst - Revenue & Pricing** <br />
 <a href="https://www.edreamsodigeo.com/" target="_blank">eDreams ODIGEO</a> <br />
 03/2024 – present | Barcelona, Spain
 {: style="text-align: justify"}
@@ -18,7 +18,7 @@ permalink: /cv
 08/2019 – 03/2024 | Madrid, Spain
 {: style="text-align: justify"}
 
-**Insurance Agent** <br />
+**Insurance Analyst** <br />
 <a href="https://www.april.com/en/" target="_blank">APRIL</a> <br />
 10/2018 – 07/2019 | Madrid, Spain
 {: style="text-align: justify"}
@@ -58,18 +58,16 @@ permalink: /cv
 ---
 ## Certifications
 
-<a href="https://www.coursera.org/account/accomplishments/professional-cert/91IBDG8X3Q3T" target="_blank">DeepLearning.AI Data Engineering Professional Certificate</a> <br />
+<a href="https://www.credly.com/badges/1dd1e2dd-ba9e-48dd-8688-5b4bdcfea979/public_url" target="_blank">Google Cloud Certified Professional Data Engineer</a> <br />
 
-<a href="https://www.coursera.org/account/accomplishments/specialization/BQRNKC5408FJ" target="_blank">DeepLearning.AI Mathematics for Machine Learning and Data Science Specialization Certificate </a> <br />
+<a href="https://www.credly.com/badges/c01b2c6c-3b41-444d-b21d-a52cadfdae20/public_url" target="_blank">Astronomer Certification for Apache Airflow 3 Fundamentals</a> <br />
 
-<a href="https://www.coursera.org/account/accomplishments/professional-cert/8Q3XKQUTTXJ5" target="_blank">Preparing for Google Cloud Certification: Cloud Data Engineer Professional Certificate</a> <br />
-
-<a href="https://www.coursera.org/account/accomplishments/specialization/M2GN2VUX1KV2" target="_blank">Applied Python Data Engineering Specialization Certificate</a> <br />
+<a href="https://credentials.getdbt.com/97dc8cd3-c273-47d2-86a5-c792cf0341cf#acc.PsmTu3oN" target="_blank">dbt Fundamentals</a> <br />
 
 ---
 ## Skills
 
-Python, SQL, Pandas, Scikit-Learn, Seaborn, Tensorflow, GCP, Looker, Airflow, MLflow, FastAPI, Git, GitHub
+Python · SQL · Bash · Git · Airflow · dbt · Google Cloud Platform (GCP) · Looker Studio
 
 ---
 ## Languages
