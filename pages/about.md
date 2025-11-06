@@ -9,7 +9,7 @@ permalink: /about
 Hi, I am Alvaro Carranza, a Madrid-based data professional specialized in analytics, data science, AI, and data engineering. Certified Google Cloud Professional Data Engineer. Curious and always learning. Currently developing the Spanish Public Procurement Database (<a href="https://github.com/Alvaro2c/sppd" target="_blank">SPPD</a>), a comprehensive tool built from public government data to enable search and insights for decision-making.
 {: style="text-align: justify"}
 
-I am currently working as a Data Analyst at <a href="https://www.edreamsodigeo.com/" target="_blank">eDreams ODIGEO</a>.
+I am currently working as a Data Scientist at <a href="https://www.edreamsodigeo.com/" target="_blank">eDreams ODIGEO</a>.
 {: style="text-align: justify"}
 
 You can also take look at my previous experience and education on <a href="https://www.linkedin.com/in/alvaro-carranza/" target="_blank">LinkedIn</a> and check out my <a href="https://github.com/Alvaro2c" target="_blank">GitHub</a>.
