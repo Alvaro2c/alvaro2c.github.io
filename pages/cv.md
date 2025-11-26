@@ -40,9 +40,6 @@ permalink: /cv
 **Data Science & AI Bootcamp** <br />
 <a href="https://www.lewagon.com/" target="_blank">Le Wagon</a> <br />
 04/2023 – 10/2023 | Madrid, Spain
-- 24 week part-time intensive coding bootcamp
-- Data Processing and Analysis, Machine Learning, Deep Learning and Data Engineering
-- Worked in a team of 5 and completed "HS Detector Web App" project in 5 weeks
 {: style="text-align: justify"}
 
 **PhD Preparation Year, Sociology** <br />
