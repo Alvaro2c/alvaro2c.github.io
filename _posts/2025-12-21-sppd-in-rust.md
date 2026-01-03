@@ -43,6 +43,5 @@ The tool also handles batch sizes, concurrent downloads, and retries automatical
 
 **Resources**
 {: style="text-align: justify"}
-You can find the project and the README, which is also available in Spanish, on GitHub at the following link: https://github.com/Alvaro2c/sppd-cli
-Documentation is also available here: https://alvaro2c.github.io/sppd-cli/sppd_cli/
+You can find the project and the README, which is also available in Spanish, on <a href="https://github.com/Alvaro2c/sppd-cli" target="_blank"><b>GitHub</b></a>, and code documentation on  <a href="https://alvaro2c.github.io/sppd-cli/sppd_cli/" target="_blank"><b>this Github Pages</b></a>.
 {: style="text-align: justify"}
