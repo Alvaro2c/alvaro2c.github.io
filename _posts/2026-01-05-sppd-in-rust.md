@@ -15,7 +15,7 @@ The result is sppd-cli, a command-line tool designed to download, extract, and c
 
 **The Evolution**
 {: style="text-align: justify"}
-My earlier posts covered various stages of this project, including batch and parallel parsing. This new project focuses on creating a robust, 100% Rust-based pipeline. It streamlines the process that was previously handled through various Python scripts into a single efficient workflow.
+My earlier posts covered various stages of this project in its previous Python version, including batch and parallel parsing. This new project focuses on creating a robust, 100% Rust-based pipeline. It streamlines the process that was previously handled through various Python scripts into a single efficient workflow.
 {: style="text-align: justify"}
 
 **How it Works**
